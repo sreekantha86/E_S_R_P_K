@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [skerp]
+    WITH PASSWORD = N'W.boqjnk?tq`>5lccjgfhm|xmsFT7_&#$!~<wrkZpptzbujn', SID = 0xC81CC05109EF7C4F998B6578F797F5B0, DEFAULT_DATABASE = [REPS], DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

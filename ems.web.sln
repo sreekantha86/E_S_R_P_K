@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ems.core", "ems.core\ems.co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ems.domain", "ems.domain\ems.domain.csproj", "{6249AC28-5AC1-4780-A6E0-61D5BFF9E05C}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ems.database", "ems.database\ems.database.sqlproj", "{2153B8DB-B90B-40D9-94C6-414CBF6A7EA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,12 @@ Global
 		{6249AC28-5AC1-4780-A6E0-61D5BFF9E05C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6249AC28-5AC1-4780-A6E0-61D5BFF9E05C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6249AC28-5AC1-4780-A6E0-61D5BFF9E05C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2153B8DB-B90B-40D9-94C6-414CBF6A7EA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2153B8DB-B90B-40D9-94C6-414CBF6A7EA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2153B8DB-B90B-40D9-94C6-414CBF6A7EA2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2153B8DB-B90B-40D9-94C6-414CBF6A7EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2153B8DB-B90B-40D9-94C6-414CBF6A7EA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2153B8DB-B90B-40D9-94C6-414CBF6A7EA2}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

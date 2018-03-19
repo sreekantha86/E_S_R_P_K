@@ -178,5 +178,11 @@
     <Build Include="Security\skerp.sql" />
     <Build Include="Security\skerp_1.sql" />
     <Build Include="Security\Permissions.sql" />
+    <Build Include="dbo\Tables\FinancialYear.sql" />
+    <Build Include="dbo\Tables\ServiceIncomeHd.sql" />
+    <Build Include="dbo\Tables\ServiceIncomeDT.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="ems.database.refactorlog" />
   </ItemGroup>
 </Project>

@@ -6,7 +6,7 @@
     [PhoneNumber]   VARCHAR (50)  NULL,
     [City]          VARCHAR (50)  NULL,
     [District]      VARCHAR (50)  NULL,
-    [PAN]           VARCHAR (50)  NULL,
+    [PAN]           VARCHAR (10)  NULL,
     [ContactPerson] VARCHAR (50)  NULL,
     [Email]         VARCHAR (50)  NULL,
     [VendorTypeId]  INT           NULL,

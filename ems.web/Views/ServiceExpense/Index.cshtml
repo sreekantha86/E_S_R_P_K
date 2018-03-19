@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@(Html.EJ().Grid<ems.domain.ViewModels.ServiceExpenseViewModel>("Grid")
+                 .Datasource((IEnumerable<ems.domain.ViewModels.ServiceExpenseViewModel>)ViewBag.datasource)
+                 .ToolbarSettings(toolBar => toolBar.ShowToolbar().ToolbarItems(items =>
+                 {
+                     items.AddTool(ToolBarItems.ExcelExport);
+                     items.AddTool(ToolBarItems.WordExport);
+                     items.AddTool(ToolBarItems.PdfExport);
+                 }))
+                 .AllowPaging()
+                 .IsResponsive(true)
+                .EnableResponsiveRow(true)
+                .AllowFiltering()
+                 .Columns(col =>
+                 {
+                     col.Field("SerId").Visible(true).HeaderText("SerId").IsIdentity(true).IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
+                     col.Field(p => p.SerSAC).HeaderText("SAC").TextAlign(TextAlign.Left).Width("17%").Add();
+                     col.Field(p => p.SerName).HeaderText("Service/Expense Def").TextAlign(TextAlign.Left).Width("49%").Add();
+                     col.Field(p => p.gstName).HeaderText("GST Rate").TextAlign(TextAlign.Left).Width("17%").Add();
+                     col.Field(p => p.SerExpTypeDesc).HeaderText("Service/Expense").TextAlign(TextAlign.Left).Width("17%").Add();
+                 })
+                 .ClientSideEvents(events=>events.RecordDoubleClick("DoubleClicked"))
+                 .Mappers(map => map.ExportToExcelAction("Base/ExportToExcel").ExportToWordAction("Base/ExportToWord").ExportToPdfAction("Base/ExportToPdf"))
+)
+
+<script>
+    function DoubleClicked(args)
+    {
+        var grid = $("#Grid").ejGrid("instance");
+        var id = args.data[grid.getPrimaryKeyFieldNames()[0]];
+        var url = '@Url.Action("Edit", "ServiceExpense")';
+        location.href = url + "/" + id;
+    }
+</script>

@@ -1,0 +1,111 @@
+﻿@model ems.domain.Vendor
+<div class="box-body">
+    <div class="form-group">
+        @Html.LabelFor(m => m.VendorCode)
+        <div class="row">
+            <div class="col-xs-3">
+                @Html.TextBoxFor(model => model.VendorCode, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.VendorCode)
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.VendorName)
+        <div class="row">
+            <div class="col-xs-3">
+                @Html.TextBoxFor(model => model.VendorName, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.VendorName)
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Address)
+        <div class="row">
+            <div class="col-xs-5">
+                @Html.TextAreaFor(model => model.Address, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Address)
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.PhoneNumber)
+        <div class="row">
+            <div class="col-xs-3">
+                @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.PhoneNumber)
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.City)
+        <div class="row">
+            <div class="col-xs-3">
+                @Html.TextBoxFor(model => model.City, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.City)
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.District)
+        <div class="row">
+            <div class="col-xs-3">
+                @Html.TextBoxFor(model => model.District, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.District)
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.PAN)
+        <div class="row">
+            <div class="col-xs-3">
+                @Html.TextBoxFor(model => model.PAN, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.PAN)
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.ContactPerson)
+        <div class="row">
+            <div class="col-xs-3">
+                @Html.TextBoxFor(model => model.ContactPerson, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ContactPerson)
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Email)
+        <div class="row">
+            <div class="col-xs-3">
+                @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Email)
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.VendorTypeId)
+        <div class="row">
+            <div class="col-xs-3">
+                @Html.EJ().DropDownListFor(model => model.VendorTypeId, (Syncfusion.JavaScript.Models.DropDownListProperties)ViewData["VendorTypeDropdownModel"])
+                @Html.ValidationMessageFor(model => model.VendorTypeId)
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.GSTRegistered)
+        <div class="row">
+            <div class="col-xs-3">
+                @Html.CheckBoxFor(model => model.GSTRegistered, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.GSTRegistered)
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.GSTRegNo)
+        <div class="row">
+            <div class="col-xs-3">
+                @Html.TextBoxFor(model => model.GSTRegNo, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.GSTRegNo)
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+﻿@model ems.domain.Warehouse
+<div class="box-body">
+    <div class="form-group">
+        @Html.LabelFor(m => m.whCode)
+        <div class="row">
+            <div class="col-xs-3">
+                @Html.TextBoxFor(model => model.whCode, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.whCode)
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.whName)
+        <div class="row">
+            <div class="col-xs-3">
+                @Html.TextBoxFor(model => model.whName, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.whName)
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.whAddress)
+        @Html.TextAreaFor(model => model.whAddress, new { @class = "form-control", @rows = "3" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.whTel)
+        <div class="row">
+            <div class="col-xs-3">
+                @Html.TextBoxFor(model => model.whTel, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.whTel)
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.whMob)
+        <div class="row">
+            <div class="col-xs-3">
+                @Html.TextBoxFor(model => model.whMob, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.whMob)
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.whContactPerson)
+        <div class="row">
+            <div class="col-xs-3">
+                @Html.TextBoxFor(model => model.whContactPerson, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.whContactPerson)
+            </div>
+        </div>
+    </div>    
+</div>

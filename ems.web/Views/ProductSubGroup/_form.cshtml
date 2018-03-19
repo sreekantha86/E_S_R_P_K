@@ -1,0 +1,43 @@
+﻿@model ems.domain.ProductSubGroup
+<div class="box-body">
+    <div class="form-group">
+        @Html.LabelFor(m => m.prdSGCode)
+        <div class="row">
+            <div class="col-xs-3">
+                @Html.TextBoxFor(model => model.prdSGCode, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.prdSGCode)
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.prdSGName)
+        <div class="row">
+            <div class="col-xs-3">
+                @Html.TextBoxFor(model => model.prdSGName, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.prdSGName)
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.prdMGId)
+        <div class="row">
+            <div class="col-xs-3">
+                @Html.EJ().DropDownListFor(model => model.prdMGId, (Syncfusion.JavaScript.Models.DropDownListProperties)ViewData["ProdGroupDropdownModel"])
+                @Html.ValidationMessageFor(model => model.prdMGId)
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.gstId)
+        <div class="row">
+            <div class="col-xs-3">
+                @Html.EJ().DropDownListFor(model => model.gstId, (Syncfusion.JavaScript.Models.DropDownListProperties)ViewData["GSTRateDropdownModel"])
+                @Html.ValidationMessageFor(model => model.gstId)
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.prdSGRemarks)
+        @Html.TextAreaFor(model => model.prdSGRemarks, new { @class = "form-control", @rows = "3" })
+    </div>
+</div>

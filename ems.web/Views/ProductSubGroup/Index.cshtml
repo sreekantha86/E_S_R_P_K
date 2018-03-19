@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@(Html.EJ().Grid<ems.domain.ViewModels.ProductSubGroupViewModel>("Grid")
+                 .Datasource((IEnumerable<ems.domain.ViewModels.ProductSubGroupViewModel>)ViewBag.datasource)
+                 .ToolbarSettings(toolBar => toolBar.ShowToolbar().ToolbarItems(items =>
+                 {
+                     items.AddTool(ToolBarItems.ExcelExport);
+                     items.AddTool(ToolBarItems.WordExport);
+                     items.AddTool(ToolBarItems.PdfExport);
+                 }))
+                 .AllowPaging()
+                 .IsResponsive(true)
+                .EnableResponsiveRow(true)
+                .AllowFiltering()
+                 .Columns(col =>
+                 {
+                     col.Field("prdSGId").Visible(true).HeaderText("prdSGId").IsIdentity(true).IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
+                     col.Field(p => p.prdSGCode).HeaderText("Code").TextAlign(TextAlign.Left).Width("20%").Add();
+                     col.Field(p => p.prdSGName).HeaderText("Product Sub Group").TextAlign(TextAlign.Left).Width("30%").Add();
+                     col.Field(p => p.prdMGName).HeaderText("Product Group").TextAlign(TextAlign.Left).Width("25%").Add();
+                     col.Field(p => p.gstName).HeaderText("GST Rate").TextAlign(TextAlign.Left).Width("25%").Add();
+                 })
+                 .ClientSideEvents(events => events.RecordDoubleClick("DoubleClicked"))
+                 .Mappers(map => map.ExportToExcelAction("Base/ExportToExcel").ExportToWordAction("Base/ExportToWord").ExportToPdfAction("Base/ExportToPdf"))
+)
+
+<script>
+    function DoubleClicked(args)
+    {
+        var grid = $("#Grid").ejGrid("instance");
+        var id = args.data[grid.getPrimaryKeyFieldNames()[0]];
+        var url = '@Url.Action("Edit", "ProductSubGroup")';
+        location.href = url + "/" + id;
+    }
+</script>

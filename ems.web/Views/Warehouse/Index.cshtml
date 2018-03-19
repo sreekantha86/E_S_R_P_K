@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@(Html.EJ().Grid<ems.domain.Warehouse>("Grid")
+                 .Datasource((IEnumerable<ems.domain.Warehouse>)ViewBag.datasource)
+                 .ToolbarSettings(toolBar => toolBar.ShowToolbar().ToolbarItems(items =>
+                 {
+                     items.AddTool(ToolBarItems.ExcelExport);
+                     items.AddTool(ToolBarItems.WordExport);
+                     items.AddTool(ToolBarItems.PdfExport);
+                 }))
+                 .AllowPaging()
+                 .IsResponsive(true)
+                .EnableResponsiveRow(true)
+                .AllowFiltering()
+                 .Columns(col =>
+                 {
+                     col.Field("whId").Visible(true).HeaderText("whId").IsIdentity(true).IsPrimaryKey(true).TextAlign(TextAlign.Left).Add();
+                     col.Field(p => p.whCode).HeaderText("Code").TextAlign(TextAlign.Left).Width("10%").Add();
+                     col.Field(p => p.whName).HeaderText("Warehouse").TextAlign(TextAlign.Left).Width("30%").Add();
+                     col.Field(p => p.whTel).HeaderText("Telephone").TextAlign(TextAlign.Left).Width("20%").Add();
+                     col.Field(p => p.whMob).HeaderText("Mobile").TextAlign(TextAlign.Left).Width("20%").Add();
+                     col.Field(p => p.whContactPerson).HeaderText("Contact Person").TextAlign(TextAlign.Left).Width("20%").Add();
+                 })
+                 .ClientSideEvents(events=>events.RecordDoubleClick("DoubleClicked"))
+                 .Mappers(map => map.ExportToExcelAction("Base/ExportToExcel").ExportToWordAction("Base/ExportToWord").ExportToPdfAction("Base/ExportToPdf"))
+)
+
+<script>
+    function DoubleClicked(args)
+    {
+        var grid = $("#Grid").ejGrid("instance");
+        var id = args.data[grid.getPrimaryKeyFieldNames()[0]];
+        var url = '@Url.Action("Edit", "Warehouse")';
+        location.href = url + "/" + id;
+    }
+</script>

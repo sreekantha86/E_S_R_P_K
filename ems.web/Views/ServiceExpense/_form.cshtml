@@ -1,0 +1,43 @@
+﻿@model ems.domain.ServiceExpense
+<div class="box-body">
+    <div class="form-group">
+        @Html.LabelFor(m => m.SerSAC)
+        <div class="row">
+            <div class="col-xs-3">
+                @Html.TextBoxFor(model => model.SerSAC, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.SerSAC)
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.SerName)
+        <div class="row">
+            <div class="col-xs-3">
+                @Html.TextBoxFor(model => model.SerName, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.SerName)
+            </div>
+        </div>
+    </div>    
+    <div class="form-group">
+        @Html.LabelFor(m => m.SerOrExp)
+        <div class="row">
+            <div class="col-xs-3">
+                @Html.EJ().DropDownListFor(model => model.SerOrExp, (Syncfusion.JavaScript.Models.DropDownListProperties)ViewData["SerExpTypeDropdownModel"])
+                @Html.ValidationMessageFor(model => model.SerOrExp)
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.gstId)
+        <div class="row">
+            <div class="col-xs-3">
+                @Html.EJ().DropDownListFor(model => model.gstId, (Syncfusion.JavaScript.Models.DropDownListProperties)ViewData["GSTRateDropdownModel"])
+                @Html.ValidationMessageFor(model => model.gstId)
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.SerRemarks)
+        @Html.TextAreaFor(model => model.SerRemarks, new { @class = "form-control", @rows = "3" })
+    </div>
+</div>

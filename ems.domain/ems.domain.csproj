@@ -60,6 +60,7 @@
     <Compile Include="ViewModels\ProductMainGroupViewModel.cs" />
     <Compile Include="ViewModels\ProductSubGroupViewModel.cs" />
     <Compile Include="ViewModels\ServiceExpenseViewModel.cs" />
+    <Compile Include="ViewModels\ServiceIncome.cs" />
     <Compile Include="Warehouse.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

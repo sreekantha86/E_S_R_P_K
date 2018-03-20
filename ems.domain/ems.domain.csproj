@@ -51,6 +51,8 @@
     <Compile Include="ProductType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceExpense.cs" />
+    <Compile Include="ServiceIncomeDT.cs" />
+    <Compile Include="ServiceIncomeHD.cs" />
     <Compile Include="UOM.cs" />
     <Compile Include="Vendor.cs" />
     <Compile Include="VendorType.cs" />

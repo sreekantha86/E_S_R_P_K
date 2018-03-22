@@ -37,10 +37,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ems.core">
-      <HintPath>..\..\ems.core\bin\Debug\ems.core.dll</HintPath>
+      <HintPath>..\ems.core\bin\Debug\ems.core.dll</HintPath>
     </Reference>
     <Reference Include="ems.domain">
-      <HintPath>..\..\ems.domain\bin\Debug\ems.domain.dll</HintPath>
+      <HintPath>..\ems.domain\bin\Debug\ems.domain.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
@@ -706,6 +706,7 @@
     <Content Include="Views\Vendor\_form.cshtml" />
     <Content Include="Views\Vendor\Index.cshtml" />
     <Content Include="Views\Vendor\Edit.cshtml" />
+    <Content Include="Views\ServiceInvoice\Create.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -861,7 +862,6 @@
     <Folder Include="Content\login\" />
     <Folder Include="Models\" />
     <Folder Include="Views\ExportOrder\" />
-    <Folder Include="Views\ServiceInvoice\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -57,6 +57,7 @@
     <Compile Include="ProductSubGroupRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceExpenseRepository.cs" />
+    <Compile Include="ServiceIncomeRepository.cs" />
     <Compile Include="SQLConnection.cs" />
     <Compile Include="VendorRepository.cs" />
     <Compile Include="WarehouseRepository.cs" />

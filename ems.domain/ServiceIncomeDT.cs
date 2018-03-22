@@ -9,6 +9,7 @@ namespace ems.domain
     public class ServiceIncomeDT
     {
         public int SerInvRowId { get; set; }
+        public int slNo { get; set; }
         public int SerInvId { get; set; }
         public int SerId { get; set; }
         public string RowRemarks { get; set; }

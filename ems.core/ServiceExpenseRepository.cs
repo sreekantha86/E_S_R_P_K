@@ -25,7 +25,8 @@ namespace ems.core
                                   ,A.[SerRemarks]
 	                              ,B.[gstName]
                               FROM [dbo].[ServiceExpense] A
-                              INNER JOIN [GSTRates] B on A.[gstId] = B.[gstId]";
+                              INNER JOIN [GSTRates] B on A.[gstId] = B.[gstId]
+                              ORDER BY A.[SerName]";
 
                 return connection.Query<ServiceExpenseViewModel>(query, commandType: CommandType.Text).ToList();
             }

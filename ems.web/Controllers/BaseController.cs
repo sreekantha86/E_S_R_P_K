@@ -16,6 +16,11 @@ namespace ems.web.Controllers
         protected string CurrentAction { get; private set; }
         protected string CurrentController { get; private set; }
 
+        protected override IAsyncResult BeginExecuteCore(AsyncCallback callback, object state)
+        {
+            InitSyncDatePicker();
+            return base.BeginExecuteCore(callback, state);
+        }
         //protected override void Initialize(RequestContext requestContext)
         //{
         //    CurrentController = requestContext.HttpContext.Request.RequestContext.RouteData.Values["controller"].ToString();
@@ -43,7 +48,19 @@ namespace ems.web.Controllers
             var DataSource = TempData["ExportData"];
             TempData["ExportData"] = DataSource;
             GridProperties obj = (GridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(GridProperties), GridModel);
-            exp.Export(obj, DataSource, "Export.pdf", false, false, "flat-saffron");
+            //exp.Export(obj, DataSource, "Export.pdf", false, false, "flat-saffron");
+            exp.Export(gridmaodel: obj, datasource: DataSource, fileName: "Export.pdf", isHideColumnIncude: false, isTemplateColumnIclude: false, theme: "flat-saffron");
+
+        }
+        public void InitSyncDatePicker()
+        {
+            DatePickerProperties datemodel = new DatePickerProperties();
+            datemodel.Locale = "en-US";
+            datemodel.ShowOtherMonths = false;
+            datemodel.DateFormat = "dd/MMM/yyyy";
+            datemodel.MinDate = "01/Jan/2018";
+            datemodel.MaxDate = "31/Dec/2018";
+            ViewData["date"] = datemodel;
         }
     }
 }

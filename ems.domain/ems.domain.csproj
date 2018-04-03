@@ -46,6 +46,7 @@
     <Compile Include="Currency.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="GST.cs" />
+    <Compile Include="LoginViewModel.cs" />
     <Compile Include="ProductMainGroup.cs" />
     <Compile Include="ProductSubGroup.cs" />
     <Compile Include="ProductType.cs" />
@@ -54,6 +55,7 @@
     <Compile Include="ServiceIncomeDT.cs" />
     <Compile Include="ServiceIncomeHD.cs" />
     <Compile Include="UOM.cs" />
+    <Compile Include="User.cs" />
     <Compile Include="Vendor.cs" />
     <Compile Include="VendorType.cs" />
     <Compile Include="ViewModels\DropdownViewModel.cs" />

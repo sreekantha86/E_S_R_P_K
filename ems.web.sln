@@ -14,10 +14,19 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ems.domain", "ems.domain", "{3BEE36FC-D07D-4705-9FB9-EEF7335DB080}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ems.core", "ems.core\ems.core.csproj", "{A4DF9868-D8DB-4241-AFC6-2C340420B04D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6249AC28-5AC1-4780-A6E0-61D5BFF9E05C} = {6249AC28-5AC1-4780-A6E0-61D5BFF9E05C}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ems.domain", "ems.domain\ems.domain.csproj", "{6249AC28-5AC1-4780-A6E0-61D5BFF9E05C}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ems.database", "ems.database\ems.database.sqlproj", "{2153B8DB-B90B-40D9-94C6-414CBF6A7EA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prms.web", "prms.web\prms.web.csproj", "{A982E2F3-5D68-4880-ACA9-32EDE072941D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6249AC28-5AC1-4780-A6E0-61D5BFF9E05C} = {6249AC28-5AC1-4780-A6E0-61D5BFF9E05C}
+		{A4DF9868-D8DB-4241-AFC6-2C340420B04D} = {A4DF9868-D8DB-4241-AFC6-2C340420B04D}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +52,10 @@ Global
 		{2153B8DB-B90B-40D9-94C6-414CBF6A7EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2153B8DB-B90B-40D9-94C6-414CBF6A7EA2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2153B8DB-B90B-40D9-94C6-414CBF6A7EA2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A982E2F3-5D68-4880-ACA9-32EDE072941D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A982E2F3-5D68-4880-ACA9-32EDE072941D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A982E2F3-5D68-4880-ACA9-32EDE072941D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A982E2F3-5D68-4880-ACA9-32EDE072941D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,25 @@
+﻿@model ems.domain.ViewModels.ServiceIncome
+<div class="box-body">
+    <div class="row">
+        <div class="col-xs-2">
+            <div class="form-group">
+                @Html.LabelFor(m => m.HeadModel.SerInvNo)
+                <input class="form-control" id="SerInvNo" name="SerInvNo" type="text" value="@(Model.HeadModel.SerInvPrefix + "/" + Model.HeadModel.SerInvNo.ToString())" readonly="readonly">
+            </div>
+        </div>
+        <div class="col-xs-2">
+            <div class="form-group">
+                @Html.LabelFor(m => m.HeadModel.SerInvDate)
+                @Html.EJ().DatePickerFor(model => model.HeadModel.SerInvDate, (Syncfusion.JavaScript.Models.DatePickerProperties)ViewData["date"])
+                @Html.ValidationMessageFor(model => model.HeadModel.SerInvDate)
+            </div>
+        </div>
+        <div class="col-xs-5">
+            <div class="form-group">
+                @Html.LabelFor(m => m.HeadModel.CusId)
+                @Html.EJ().DropDownListFor(model => model.HeadModel.CusId, (Syncfusion.JavaScript.Models.DropDownListProperties)ViewData["CustomerDropdownModel"])
+                @Html.ValidationMessageFor(model => model.HeadModel.CusId)
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@(Html.EJ().Grid<ems.domain.GST>("Grid")
+                 .Datasource((IEnumerable<ems.domain.GST>)ViewBag.datasource)
+                 .ToolbarSettings(toolBar => toolBar.ShowToolbar().ToolbarItems(items =>
+                 {
+                     items.AddTool(ToolBarItems.ExcelExport);
+                     items.AddTool(ToolBarItems.WordExport);
+                     items.AddTool(ToolBarItems.PdfExport);
+                 }))
+                 .AllowPaging()
+                 .IsResponsive(true)
+                .EnableResponsiveRow(true)
+                .AllowFiltering()
+                 .Columns(col =>
+                 {
+                     col.Field("gstId").Visible(true).HeaderText("gstId").IsIdentity(true).IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
+                     col.Field(p => p.gstName).HeaderText("GST Name").TextAlign(TextAlign.Left).Width("49%").Add();
+                     col.Field(p => p.gstRate).HeaderText("Combound Rate").Format("{0:N2}").TextAlign(TextAlign.Right).Width("17%").Add();
+                     col.Field(p => p.gstSgstRate).HeaderText("SGST Rate").Format("{0:N2}").TextAlign(TextAlign.Right).Width("17%").Add();
+                     col.Field(p => p.gstCgstRate).HeaderText("CGST Rate").Format("{0:N2}").TextAlign(TextAlign.Right).Width("17%").Add();
+                 })
+                 .ClientSideEvents(events=>events.RecordDoubleClick("DoubleClicked"))
+                 .Mappers(map => map.ExportToExcelAction("Base/ExportToExcel").ExportToWordAction("Base/ExportToWord").ExportToPdfAction("Base/ExportToPdf"))
+)
+
+<script>
+    function DoubleClicked(args)
+    {
+        var id = args.data["gstId"];
+        var url = '@Url.Action("Edit", "GST")';
+        location.href = url + "/" + id;
+    }
+</script>

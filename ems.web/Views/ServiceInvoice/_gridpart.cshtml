@@ -1,0 +1,55 @@
+﻿@model ems.domain.ViewModels.ServiceIncome
+@using Syncfusion.JavaScript.Models
+<div class="box-body">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="form-group">
+                @(Html.EJ().Grid<ems.domain.ServiceIncomeDT>("ForeignKey")
+                    .Datasource(Model.ItemsModel)
+                    .AllowPaging()
+                    .AllowGrouping()
+                    .AllowFiltering()
+                    .FilterSettings(filter => { filter.FilterType(FilterType.Menu); })
+                    .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing(); })
+                    .ToolbarSettings(toolbar =>
+                    {
+                        toolbar.ShowToolbar().ToolbarItems(items =>
+                        {
+                            items.AddTool(ToolBarItems.Add);
+                            items.AddTool(ToolBarItems.Edit);
+                            items.AddTool(ToolBarItems.Delete);
+                            items.AddTool(ToolBarItems.Update);
+                            items.AddTool(ToolBarItems.Cancel);
+                        });
+                    })
+                    .Columns(col =>
+                    {
+                        col.Field("slNo").HeaderText("#").IsPrimaryKey(true).TextAlign(TextAlign.Right).ValidationRules(v => v.AddRule("required", true).AddRule("number", true)).Width(90).Add();
+                        col.Field("SerId").HeaderText("Expense Type").ForeignKeyField("SerId")
+                           .ForeignKeyValue("SerName").DataSource((List<ems.domain.ViewModels.ServiceExpenseViewModel>)ViewData["ServiceDropdownModel"])
+                           .TextAlign(TextAlign.Left).Width(90).Add();
+                        col.Field("RowRemarks").HeaderText("Customer ID").Width(80).ValidationRules(v => v.AddRule("required", true).AddRule("minlength", 3)).Add();
+                        col.Field("Amount").HeaderText("Freight").TextAlign(TextAlign.Right).Width(75).Format("{0:N}").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties() { DecimalPlaces = 2 }).ValidationRules(v => v.AddRule("required", true).AddRule("range", "[0,1000]")).Add();
+                        col.Field("GSTPer").HeaderText("Ship City").Width(80).ValidationRules(v => v.AddRule("required", true)).Add();
+                        col.Field("SGSTPer").HeaderText("Ship Country").Width(80).Add();
+                    }).ClientSideEvents(eve =>
+                    {
+                        eve.Create("create");
+                    })
+                )
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+        function create(args) {
+            $("#ForeignKey").find(".e-filterDialoge").ejDialog({
+                beforeOpen: function open(args) {
+                    if ($("#controlarea").width() < this.model.position.X)
+                        $("#" + this._id + "_wrapper").css("margin-left", -30);
+                    else
+                        $("#" + this._id + "_wrapper").css("margin-left", 0)
+                }
+            });
+        }
+</script>

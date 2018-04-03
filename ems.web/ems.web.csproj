@@ -66,59 +66,30 @@
       <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.AnalysisServices.AdomdClient, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Syncfusion.Compression.Base, Version=16.1450.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Web.FileFormatsBase45.16.1.0.24\lib\net45\Syncfusion.Compression.Base.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Syncfusion.DocIO.Base, Version=16.1450.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Web.FileFormatsBase45.16.1.0.24\lib\net45\Syncfusion.DocIO.Base.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Syncfusion.EJ, Version=16.1450.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Web.Base45.16.1.0.24\lib\net45\Syncfusion.EJ.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Syncfusion.EJ.Export, Version=16.1450.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Web.Base45.16.1.0.24\lib\net45\Syncfusion.EJ.Export.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Syncfusion.EJ.MVC, Version=16.1500.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.16.1.0.24\lib\net45\Syncfusion.EJ.MVC.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Syncfusion.Linq.Base, Version=16.1450.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Web.Base45.16.1.0.24\lib\net45\Syncfusion.Linq.Base.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Syncfusion.OfficeChart.Base, Version=16.1450.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Web.FileFormatsBase45.16.1.0.24\lib\net45\Syncfusion.OfficeChart.Base.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Syncfusion.Pdf.Base, Version=16.1450.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Web.FileFormatsBase45.16.1.0.24\lib\net45\Syncfusion.Pdf.Base.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Syncfusion.Presentation.Base, Version=16.1450.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Web.FileFormatsBase45.16.1.0.24\lib\net45\Syncfusion.Presentation.Base.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Syncfusion.XlsIO.Base, Version=16.1450.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Web.FileFormatsBase45.16.1.0.24\lib\net45\Syncfusion.XlsIO.Base.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
+    <Reference Include="Syncfusion.Compression.Base, Version=16.1450.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.EJ, Version=16.1450.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.EJ.Export, Version=16.1450.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.EJ.Mvc, Version=16.1500.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.EJ.Pivot, Version=16.1450.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Linq.Base, Version=16.1450.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Olap.Base, Version=16.1450.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.XlsIO.Base, Version=16.1450.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Web.DynamicData" />
@@ -183,13 +154,69 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\AdminLTE.css" />
+    <Content Include="Content\css\AdminLTE.min.css" />
+    <Content Include="Content\css\bootstrap-datepicker3.min.css" />
+    <Content Include="Content\css\bootstrap-select.css" />
+    <Content Include="Content\css\bootstrap-select.min.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\font-awesome.min.css" />
+    <Content Include="Content\css\icheck\aero.css" />
+    <Content Include="Content\css\icheck\aero.min.css" />
+    <Content Include="Content\css\icheck\blue.css" />
+    <Content Include="Content\css\icheck\blue.min.css" />
+    <Content Include="Content\css\icheck\green.css" />
+    <Content Include="Content\css\icheck\green.min.css" />
+    <Content Include="Content\css\icheck\grey.css" />
+    <Content Include="Content\css\icheck\grey.min.css" />
+    <Content Include="Content\css\icheck\minimal.css" />
+    <Content Include="Content\css\icheck\minimal.min.css" />
+    <Content Include="Content\css\icheck\orange.css" />
+    <Content Include="Content\css\icheck\orange.min.css" />
+    <Content Include="Content\css\icheck\pink.css" />
+    <Content Include="Content\css\icheck\pink.min.css" />
+    <Content Include="Content\css\icheck\purple.css" />
+    <Content Include="Content\css\icheck\purple.min.css" />
+    <Content Include="Content\css\icheck\red.css" />
+    <Content Include="Content\css\icheck\red.min.css" />
+    <Content Include="Content\css\icheck\yellow.css" />
+    <Content Include="Content\css\icheck\yellow.min.css" />
     <Content Include="Content\css\Ionicons\ionicons.min.css" />
+    <Content Include="Content\css\skins\skin-black-light.css" />
+    <Content Include="Content\css\skins\skin-black-light.min.css" />
+    <Content Include="Content\css\skins\skin-black.css" />
+    <Content Include="Content\css\skins\skin-black.min.css" />
+    <Content Include="Content\css\skins\skin-blue-light.css" />
+    <Content Include="Content\css\skins\skin-blue-light.min.css" />
+    <Content Include="Content\css\skins\skin-blue.css" />
+    <Content Include="Content\css\skins\skin-blue.min.css" />
+    <Content Include="Content\css\skins\skin-green-light.css" />
+    <Content Include="Content\css\skins\skin-green-light.min.css" />
+    <Content Include="Content\css\skins\skin-green.css" />
+    <Content Include="Content\css\skins\skin-green.min.css" />
+    <Content Include="Content\css\skins\skin-purple-light.css" />
+    <Content Include="Content\css\skins\skin-purple-light.min.css" />
+    <Content Include="Content\css\skins\skin-purple.css" />
+    <Content Include="Content\css\skins\skin-purple.min.css" />
+    <Content Include="Content\css\skins\skin-red-light.css" />
+    <Content Include="Content\css\skins\skin-red-light.min.css" />
+    <Content Include="Content\css\skins\skin-red.css" />
+    <Content Include="Content\css\skins\skin-red.min.css" />
+    <Content Include="Content\css\skins\skin-yellow-light.css" />
+    <Content Include="Content\css\skins\skin-yellow-light.min.css" />
+    <Content Include="Content\css\skins\skin-yellow.css" />
+    <Content Include="Content\css\skins\skin-yellow.min.css" />
+    <Content Include="Content\css\skins\_all-skins.css" />
+    <Content Include="Content\css\skins\_all-skins.min.css" />
     <Content Include="Content\ej\mobile\android-theme\ej.mobile.android-core.min.css" />
     <Content Include="Content\ej\mobile\android-theme\ej.mobile.android.min.css" />
     <Content Include="Content\ej\mobile\ej.mobile.all.min.css" />
     <Content Include="Content\ej\mobile\flat-theme\ej.mobile.flat-core.min.css" />
     <Content Include="Content\ej\mobile\flat-theme\ej.mobile.flat-theme.min.css" />
+    <Content Include="Content\ej\mobile\images\ejmmobilefonts.eot" />
     <Content Include="Content\ej\mobile\images\ejmmobilefonts.svg" />
+    <Content Include="Content\ej\mobile\images\ejmmobilefonts.ttf" />
+    <Content Include="Content\ej\mobile\images\ejmmobilefonts.woff" />
     <Content Include="Content\ej\mobile\images\PullToRefresh\PtR_android_dark.GIF" />
     <Content Include="Content\ej\mobile\images\PullToRefresh\PtR_android_light.GIF" />
     <Content Include="Content\ej\mobile\images\PullToRefresh\PtR_ios7_dark.gif" />
@@ -214,6 +241,7 @@
     <Content Include="Content\ej\mobile\ios7-theme\ej.mobile.ios7.min.css" />
     <Content Include="Content\ej\mobile\windows-theme\ej.mobile.windows-core.min.css" />
     <Content Include="Content\ej\mobile\windows-theme\ej.mobile.windows.min.css" />
+    <Content Include="Content\ej\web\bootstrap-theme\ej.theme.less" />
     <Content Include="Content\ej\web\bootstrap-theme\ej.theme.min.css" />
     <Content Include="Content\ej\web\bootstrap-theme\ej.web.all.min.css" />
     <Content Include="Content\ej\web\bootstrap-theme\images\ajax-loader.gif" />
@@ -233,7 +261,10 @@
     <Content Include="Content\ej\web\common-images\documenteditor\tablecenteralignment.svg" />
     <Content Include="Content\ej\web\common-images\documenteditor\tableleftalignment.svg" />
     <Content Include="Content\ej\web\common-images\documenteditor\tablerightalignment.svg" />
+    <Content Include="Content\ej\web\common-images\ejicons.eot" />
     <Content Include="Content\ej\web\common-images\ejicons.svg" />
+    <Content Include="Content\ej\web\common-images\ejicons.ttf" />
+    <Content Include="Content\ej\web\common-images\ejicons.woff" />
     <Content Include="Content\ej\web\common-images\fileexplorer\file_icons.png" />
     <Content Include="Content\ej\web\common-images\grid\dropPointer.cur" />
     <Content Include="Content\ej\web\common-images\kanban\nouser.svg" />
@@ -262,7 +293,11 @@
     <Content Include="Content\ej\web\common-images\mediaplayer\basic_view_toolbar_bg.png" />
     <Content Include="Content\ej\web\common-images\mediaplayer\header_bg.png" />
     <Content Include="Content\ej\web\common-images\mediaplayer\thumbnail.png" />
+    <Content Include="Content\ej\web\common-images\mediaplayer\waiting_popup.gif" />
+    <Content Include="Content\ej\web\common-images\navigationdrawer\icons.eot" />
     <Content Include="Content\ej\web\common-images\navigationdrawer\icons.svg" />
+    <Content Include="Content\ej\web\common-images\navigationdrawer\icons.ttf" />
+    <Content Include="Content\ej\web\common-images\navigationdrawer\icons.woff" />
     <Content Include="Content\ej\web\common-images\pdfviewer\preloader-pdfviewer.gif" />
     <Content Include="Content\ej\web\common-images\pivotgrid\circle.png" />
     <Content Include="Content\ej\web\common-images\pivotgrid\diamond.png" />
@@ -290,7 +325,10 @@
     <Content Include="Content\ej\web\common-images\ribbon\Browser.png" />
     <Content Include="Content\ej\web\common-images\ribbon\Check.png" />
     <Content Include="Content\ej\web\common-images\ribbon\Diet.png" />
+    <Content Include="Content\ej\web\common-images\ribbon\ejrbnicons.eot" />
     <Content Include="Content\ej\web\common-images\ribbon\ejrbnicons.svg" />
+    <Content Include="Content\ej\web\common-images\ribbon\ejrbnicons.ttf" />
+    <Content Include="Content\ej\web\common-images\ribbon\ejrbnicons.woff" />
     <Content Include="Content\ej\web\common-images\ribbon\gallery.png" />
     <Content Include="Content\ej\web\common-images\ribbon\Gantt.png" />
     <Content Include="Content\ej\web\common-images\ribbon\homegallery.png" />
@@ -313,13 +351,17 @@
     <Content Include="Content\ej\web\common-images\spreadsheet\draw_border_grid_dark.cur" />
     <Content Include="Content\ej\web\common-images\spreadsheet\draw_border_grid_light.cur" />
     <Content Include="Content\ej\web\common-images\spreadsheet\draw_border_light.cur" />
+    <Content Include="Content\ej\web\common-images\spreadsheet\ejxlicons.eot" />
     <Content Include="Content\ej\web\common-images\spreadsheet\ejxlicons.svg" />
+    <Content Include="Content\ej\web\common-images\spreadsheet\ejxlicons.ttf" />
+    <Content Include="Content\ej\web\common-images\spreadsheet\ejxlicons.woff" />
     <Content Include="Content\ej\web\common-images\spreadsheet\format_painter_dark.cur" />
     <Content Include="Content\ej\web\common-images\spreadsheet\format_painter_light.cur" />
     <Content Include="Content\ej\web\common-images\spreadsheet\right_arrow_dark.cur" />
     <Content Include="Content\ej\web\common-images\spreadsheet\right_arrow_light.cur" />
     <Content Include="Content\ej\web\common-images\spreadsheet\sprites.png" />
     <Content Include="Content\ej\web\common-images\treeview\drop-sibling-rtl.png" />
+    <Content Include="Content\ej\web\default-theme\ej.theme.less" />
     <Content Include="Content\ej\web\default-theme\ej.theme.min.css" />
     <Content Include="Content\ej\web\default-theme\ej.web.all.min.css" />
     <Content Include="Content\ej\web\default-theme\images\ajax-loader.gif" />
@@ -329,10 +371,15 @@
     <Content Include="Content\ej\web\default-theme\images\rotator-icon.png" />
     <Content Include="Content\ej\web\default-theme\images\slider-tick.png" />
     <Content Include="Content\ej\web\default-theme\images\waitingpopup.gif" />
+    <Content Include="Content\ej\web\ej.widgets.core.bootstrap.less" />
     <Content Include="Content\ej\web\ej.widgets.core.bootstrap.min.css" />
+    <Content Include="Content\ej\web\ej.widgets.core.less" />
+    <Content Include="Content\ej\web\ej.widgets.core.material.less" />
     <Content Include="Content\ej\web\ej.widgets.core.material.min.css" />
     <Content Include="Content\ej\web\ej.widgets.core.min.css" />
+    <Content Include="Content\ej\web\ej.widgets.core.office-365.less" />
     <Content Include="Content\ej\web\ej.widgets.core.office-365.min.css" />
+    <Content Include="Content\ej\web\flat-azure-dark\ej.theme.less" />
     <Content Include="Content\ej\web\flat-azure-dark\ej.theme.min.css" />
     <Content Include="Content\ej\web\flat-azure-dark\ej.web.all.min.css" />
     <Content Include="Content\ej\web\flat-azure-dark\images\ajax-loader.gif" />
@@ -342,6 +389,7 @@
     <Content Include="Content\ej\web\flat-azure-dark\images\rotator-icon.png" />
     <Content Include="Content\ej\web\flat-azure-dark\images\slider-tick.png" />
     <Content Include="Content\ej\web\flat-azure-dark\images\waitingpopup.gif" />
+    <Content Include="Content\ej\web\flat-lime-dark\ej.theme.less" />
     <Content Include="Content\ej\web\flat-lime-dark\ej.theme.min.css" />
     <Content Include="Content\ej\web\flat-lime-dark\ej.web.all.min.css" />
     <Content Include="Content\ej\web\flat-lime-dark\images\ajax-loader.gif" />
@@ -351,6 +399,7 @@
     <Content Include="Content\ej\web\flat-lime-dark\images\rotator-icon.png" />
     <Content Include="Content\ej\web\flat-lime-dark\images\slider-tick.png" />
     <Content Include="Content\ej\web\flat-lime-dark\images\waitingpopup.gif" />
+    <Content Include="Content\ej\web\flat-lime\ej.theme.less" />
     <Content Include="Content\ej\web\flat-lime\ej.theme.min.css" />
     <Content Include="Content\ej\web\flat-lime\ej.web.all.min.css" />
     <Content Include="Content\ej\web\flat-lime\images\ajax-loader.gif" />
@@ -360,6 +409,7 @@
     <Content Include="Content\ej\web\flat-lime\images\rotator-icon.png" />
     <Content Include="Content\ej\web\flat-lime\images\slider-tick.png" />
     <Content Include="Content\ej\web\flat-lime\images\waitingpopup.gif" />
+    <Content Include="Content\ej\web\flat-saffron-dark\ej.theme.less" />
     <Content Include="Content\ej\web\flat-saffron-dark\ej.theme.min.css" />
     <Content Include="Content\ej\web\flat-saffron-dark\ej.web.all.min.css" />
     <Content Include="Content\ej\web\flat-saffron-dark\images\ajax-loader.gif" />
@@ -369,6 +419,7 @@
     <Content Include="Content\ej\web\flat-saffron-dark\images\rotator-icon.png" />
     <Content Include="Content\ej\web\flat-saffron-dark\images\slider-tick.png" />
     <Content Include="Content\ej\web\flat-saffron-dark\images\waitingpopup.gif" />
+    <Content Include="Content\ej\web\flat-saffron\ej.theme.less" />
     <Content Include="Content\ej\web\flat-saffron\ej.theme.min.css" />
     <Content Include="Content\ej\web\flat-saffron\ej.web.all.min.css" />
     <Content Include="Content\ej\web\flat-saffron\images\ajax-loader.gif" />
@@ -378,6 +429,7 @@
     <Content Include="Content\ej\web\flat-saffron\images\rotator-icon.png" />
     <Content Include="Content\ej\web\flat-saffron\images\slider-tick.png" />
     <Content Include="Content\ej\web\flat-saffron\images\waitingpopup.gif" />
+    <Content Include="Content\ej\web\gradient-azure-dark\ej.theme.less" />
     <Content Include="Content\ej\web\gradient-azure-dark\ej.theme.min.css" />
     <Content Include="Content\ej\web\gradient-azure-dark\ej.web.all.min.css" />
     <Content Include="Content\ej\web\gradient-azure-dark\images\ajax-loader.gif" />
@@ -387,6 +439,7 @@
     <Content Include="Content\ej\web\gradient-azure-dark\images\rotator-icon.png" />
     <Content Include="Content\ej\web\gradient-azure-dark\images\slider-tick.png" />
     <Content Include="Content\ej\web\gradient-azure-dark\images\waitingpopup.gif" />
+    <Content Include="Content\ej\web\gradient-azure\ej.theme.less" />
     <Content Include="Content\ej\web\gradient-azure\ej.theme.min.css" />
     <Content Include="Content\ej\web\gradient-azure\ej.web.all.min.css" />
     <Content Include="Content\ej\web\gradient-azure\images\ajax-loader.gif" />
@@ -396,6 +449,7 @@
     <Content Include="Content\ej\web\gradient-azure\images\rotator-icon.png" />
     <Content Include="Content\ej\web\gradient-azure\images\slider-tick.png" />
     <Content Include="Content\ej\web\gradient-azure\images\waitingpopup.gif" />
+    <Content Include="Content\ej\web\gradient-lime-dark\ej.theme.less" />
     <Content Include="Content\ej\web\gradient-lime-dark\ej.theme.min.css" />
     <Content Include="Content\ej\web\gradient-lime-dark\ej.web.all.min.css" />
     <Content Include="Content\ej\web\gradient-lime-dark\images\ajax-loader.gif" />
@@ -405,6 +459,7 @@
     <Content Include="Content\ej\web\gradient-lime-dark\images\rotator-icon.png" />
     <Content Include="Content\ej\web\gradient-lime-dark\images\slider-tick.png" />
     <Content Include="Content\ej\web\gradient-lime-dark\images\waitingpopup.gif" />
+    <Content Include="Content\ej\web\gradient-lime\ej.theme.less" />
     <Content Include="Content\ej\web\gradient-lime\ej.theme.min.css" />
     <Content Include="Content\ej\web\gradient-lime\ej.web.all.min.css" />
     <Content Include="Content\ej\web\gradient-lime\images\ajax-loader.gif" />
@@ -414,6 +469,7 @@
     <Content Include="Content\ej\web\gradient-lime\images\rotator-icon.png" />
     <Content Include="Content\ej\web\gradient-lime\images\slider-tick.png" />
     <Content Include="Content\ej\web\gradient-lime\images\waitingpopup.gif" />
+    <Content Include="Content\ej\web\gradient-saffron-dark\ej.theme.less" />
     <Content Include="Content\ej\web\gradient-saffron-dark\ej.theme.min.css" />
     <Content Include="Content\ej\web\gradient-saffron-dark\ej.web.all.min.css" />
     <Content Include="Content\ej\web\gradient-saffron-dark\images\ajax-loader.gif" />
@@ -423,6 +479,7 @@
     <Content Include="Content\ej\web\gradient-saffron-dark\images\rotator-icon.png" />
     <Content Include="Content\ej\web\gradient-saffron-dark\images\slider-tick.png" />
     <Content Include="Content\ej\web\gradient-saffron-dark\images\waitingpopup.gif" />
+    <Content Include="Content\ej\web\gradient-saffron\ej.theme.less" />
     <Content Include="Content\ej\web\gradient-saffron\ej.theme.min.css" />
     <Content Include="Content\ej\web\gradient-saffron\ej.web.all.min.css" />
     <Content Include="Content\ej\web\gradient-saffron\images\ajax-loader.gif" />
@@ -432,6 +489,7 @@
     <Content Include="Content\ej\web\gradient-saffron\images\rotator-icon.png" />
     <Content Include="Content\ej\web\gradient-saffron\images\slider-tick.png" />
     <Content Include="Content\ej\web\gradient-saffron\images\waitingpopup.gif" />
+    <Content Include="Content\ej\web\high-contrast-01\ej.theme.less" />
     <Content Include="Content\ej\web\high-contrast-01\ej.theme.min.css" />
     <Content Include="Content\ej\web\high-contrast-01\ej.web.all.min.css" />
     <Content Include="Content\ej\web\high-contrast-01\images\ajax-loader.gif" />
@@ -441,6 +499,7 @@
     <Content Include="Content\ej\web\high-contrast-01\images\rotator-icon.png" />
     <Content Include="Content\ej\web\high-contrast-01\images\slider-tick.png" />
     <Content Include="Content\ej\web\high-contrast-01\images\waitingpopup.gif" />
+    <Content Include="Content\ej\web\high-contrast-02\ej.theme.less" />
     <Content Include="Content\ej\web\high-contrast-02\ej.theme.min.css" />
     <Content Include="Content\ej\web\high-contrast-02\ej.web.all.min.css" />
     <Content Include="Content\ej\web\high-contrast-02\images\ajax-loader.gif" />
@@ -450,9 +509,13 @@
     <Content Include="Content\ej\web\high-contrast-02\images\rotator-icon.png" />
     <Content Include="Content\ej\web\high-contrast-02\images\slider-tick.png" />
     <Content Include="Content\ej\web\high-contrast-02\images\waitingpopup.gif" />
+    <Content Include="Content\ej\web\material\ej.theme.less" />
     <Content Include="Content\ej\web\material\ej.theme.min.css" />
     <Content Include="Content\ej\web\material\ej.web.all.min.css" />
+    <Content Include="Content\ej\web\material\icons\ejicons.eot" />
     <Content Include="Content\ej\web\material\icons\ejicons.svg" />
+    <Content Include="Content\ej\web\material\icons\ejicons.ttf" />
+    <Content Include="Content\ej\web\material\icons\ejicons.woff" />
     <Content Include="Content\ej\web\material\images\ajax-loader.gif" />
     <Content Include="Content\ej\web\material\images\checkedtick.png" />
     <Content Include="Content\ej\web\material\images\drop-sibling.png" />
@@ -460,9 +523,13 @@
     <Content Include="Content\ej\web\material\images\rotator-icon.png" />
     <Content Include="Content\ej\web\material\images\slider-tick.png" />
     <Content Include="Content\ej\web\material\images\waitingpopup.gif" />
+    <Content Include="Content\ej\web\office-365\ej.theme.less" />
     <Content Include="Content\ej\web\office-365\ej.theme.min.css" />
     <Content Include="Content\ej\web\office-365\ej.web.all.min.css" />
+    <Content Include="Content\ej\web\office-365\icons\ejicons.eot" />
     <Content Include="Content\ej\web\office-365\icons\ejicons.svg" />
+    <Content Include="Content\ej\web\office-365\icons\ejicons.ttf" />
+    <Content Include="Content\ej\web\office-365\icons\ejicons.woff" />
     <Content Include="Content\ej\web\office-365\images\ajax-loader.gif" />
     <Content Include="Content\ej\web\office-365\images\checkedtick.png" />
     <Content Include="Content\ej\web\office-365\images\drop-sibling.png" />
@@ -475,54 +542,64 @@
     <Content Include="Content\ej\web\responsive-css\ej.responsive.css" />
     <Content Include="Content\ej\web\responsive-css\ejgrid.responsive.css" />
     <Content Include="Content\ej\web\ribbon-css\ej.icons.css" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\img\icheck\aero%402x.png" />
+    <Content Include="Content\img\icheck\aero.png" />
+    <Content Include="Content\img\icheck\blue%402x.png" />
+    <Content Include="Content\img\icheck\blue.png" />
+    <Content Include="Content\img\icheck\green%402x.png" />
+    <Content Include="Content\img\icheck\green.png" />
+    <Content Include="Content\img\icheck\grey%402x.png" />
+    <Content Include="Content\img\icheck\grey.png" />
+    <Content Include="Content\img\icheck\minimal%402x.png" />
+    <Content Include="Content\img\icheck\minimal.png" />
+    <Content Include="Content\img\icheck\orange%402x.png" />
+    <Content Include="Content\img\icheck\orange.png" />
+    <Content Include="Content\img\icheck\pink%402x.png" />
+    <Content Include="Content\img\icheck\pink.png" />
+    <Content Include="Content\img\icheck\purple%402x.png" />
+    <Content Include="Content\img\icheck\purple.png" />
+    <Content Include="Content\img\icheck\red%402x.png" />
+    <Content Include="Content\img\icheck\red.png" />
+    <Content Include="Content\img\icheck\yellow%402x.png" />
+    <Content Include="Content\img\icheck\yellow.png" />
+    <Content Include="Content\img\user.jpg" />
+    <Content Include="Content\js\adminlte.js" />
+    <Content Include="Content\js\init.js" />
+    <Content Include="Content\js\plugins\bootstrap-select\bootstrap-select.js" />
+    <Content Include="Content\js\plugins\bootstrap-select\bootstrap-select.min.js" />
+    <Content Include="Content\js\plugins\bootstrap\bootstrap.js" />
+    <Content Include="Content\js\plugins\bootstrap\bootstrap.min.js" />
+    <Content Include="Content\js\plugins\datepicker\bootstrap-datepicker.js" />
+    <Content Include="Content\js\plugins\datepicker\bootstrap-datepicker.min.js" />
+    <Content Include="Content\js\plugins\fastclick\fastclick.js" />
+    <Content Include="Content\js\plugins\fastclick\fastclick.min.js" />
+    <Content Include="Content\js\plugins\icheck\icheck.js" />
+    <Content Include="Content\js\plugins\icheck\icheck.min.js" />
+    <Content Include="Content\js\plugins\inputmask\jquery.inputmask.bundle.js" />
+    <Content Include="Content\js\plugins\inputmask\jquery.inputmask.bundle.min.js" />
+    <Content Include="Content\js\plugins\jquery\jquery-2.2.4.js" />
+    <Content Include="Content\js\plugins\jquery\jquery-2.2.4.min.js" />
+    <Content Include="Content\js\plugins\moment\moment.js" />
+    <Content Include="Content\js\plugins\moment\moment.min.js" />
+    <Content Include="Content\js\plugins\slimscroll\jquery.slimscroll.js" />
+    <Content Include="Content\js\plugins\slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="Content\js\plugins\validator\validator.js" />
+    <Content Include="Content\js\plugins\validator\validator.min.js" />
     <Content Include="Global.asax" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
-    <Content Include="Content\ej\web\office-365\icons\ejicons.woff" />
-    <Content Include="Content\ej\web\office-365\icons\ejicons.ttf" />
-    <Content Include="Content\ej\web\office-365\icons\ejicons.eot" />
-    <Content Include="Content\ej\web\office-365\ej.theme.less" />
-    <Content Include="Content\ej\web\material\icons\ejicons.woff" />
-    <Content Include="Content\ej\web\material\icons\ejicons.ttf" />
-    <Content Include="Content\ej\web\material\icons\ejicons.eot" />
-    <Content Include="Content\ej\web\material\ej.theme.less" />
-    <Content Include="Content\ej\web\high-contrast-02\ej.theme.less" />
-    <Content Include="Content\ej\web\high-contrast-01\ej.theme.less" />
-    <Content Include="Content\ej\web\gradient-saffron\ej.theme.less" />
-    <Content Include="Content\ej\web\gradient-saffron-dark\ej.theme.less" />
-    <Content Include="Content\ej\web\gradient-lime\ej.theme.less" />
-    <Content Include="Content\ej\web\gradient-lime-dark\ej.theme.less" />
-    <Content Include="Content\ej\web\gradient-azure\ej.theme.less" />
-    <Content Include="Content\ej\web\gradient-azure-dark\ej.theme.less" />
-    <Content Include="Content\ej\web\flat-saffron\ej.theme.less" />
-    <Content Include="Content\ej\web\flat-saffron-dark\ej.theme.less" />
-    <Content Include="Content\ej\web\flat-lime\ej.theme.less" />
-    <Content Include="Content\ej\web\flat-lime-dark\ej.theme.less" />
-    <Content Include="Content\ej\web\flat-azure-dark\ej.theme.less" />
-    <Content Include="Content\ej\web\ej.widgets.core.office-365.less" />
-    <Content Include="Content\ej\web\ej.widgets.core.material.less" />
-    <Content Include="Content\ej\web\ej.widgets.core.less" />
-    <Content Include="Content\ej\web\ej.widgets.core.bootstrap.less" />
-    <Content Include="Content\ej\web\default-theme\ej.theme.less" />
-    <Content Include="Content\ej\web\common-images\spreadsheet\ejxlicons.woff" />
-    <Content Include="Content\ej\web\common-images\spreadsheet\ejxlicons.ttf" />
-    <Content Include="Content\ej\web\common-images\spreadsheet\ejxlicons.eot" />
-    <Content Include="Content\ej\web\common-images\ribbon\ejrbnicons.woff" />
-    <Content Include="Content\ej\web\common-images\ribbon\ejrbnicons.ttf" />
-    <Content Include="Content\ej\web\common-images\ribbon\ejrbnicons.eot" />
-    <Content Include="Content\ej\web\common-images\navigationdrawer\icons.woff" />
-    <Content Include="Content\ej\web\common-images\navigationdrawer\icons.ttf" />
-    <Content Include="Content\ej\web\common-images\navigationdrawer\icons.eot" />
-    <Content Include="Content\ej\web\common-images\ejicons.woff" />
-    <Content Include="Content\ej\web\common-images\ejicons.ttf" />
-    <Content Include="Content\ej\web\common-images\ejicons.eot" />
-    <Content Include="Content\ej\web\bootstrap-theme\ej.theme.less" />
-    <Content Include="Content\ej\mobile\images\ejmmobilefonts.woff" />
-    <Content Include="Content\ej\mobile\images\ejmmobilefonts.ttf" />
-    <Content Include="Content\ej\mobile\images\ejmmobilefonts.eot" />
     <None Include="scripts\jquery-1.4.4-vsdoc.js" />
-    <None Include="scripts\ej\web\ej.web.all.min.intellisense.js" />
-    <None Include="scripts\ej\web\ej.web.all-vsdoc.js" />
     <Content Include="scripts\ej\common\ej.core.min.js" />
     <Content Include="scripts\ej\common\ej.data.min.js" />
     <Content Include="scripts\ej\common\ej.draggable.min.js" />
@@ -540,6 +617,7 @@
     <Content Include="scripts\ej\datavisualization\ej.diagram.min.js" />
     <Content Include="scripts\ej\datavisualization\ej.digitalgauge.min.js" />
     <Content Include="scripts\ej\datavisualization\ej.gauge.min.js" />
+    <None Include="scripts\ej\web\ej.web.all-vsdoc.js" />
     <Content Include="scripts\ej\datavisualization\ej.heatmap.min.js" />
     <Content Include="scripts\ej\datavisualization\ej.lineargauge.min.js" />
     <Content Include="scripts\ej\datavisualization\ej.map.min.js" />
@@ -659,6 +737,7 @@
     <Content Include="scripts\ej\web\ej.treeview.min.js" />
     <Content Include="scripts\ej\web\ej.uploadbox.min.js" />
     <Content Include="scripts\ej\web\ej.waitingpopup.min.js" />
+    <None Include="scripts\ej\web\ej.web.all.min.intellisense.js" />
     <Content Include="scripts\ej\web\ej.web.all.min.js" />
     <Content Include="scripts\jquery-1.4.4.js" />
     <Content Include="scripts\jquery-1.4.4.min.js" />
@@ -670,7 +749,9 @@
     <Content Include="scripts\jquery.validate.unobtrusive.js" />
     <Content Include="scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="scripts\jsrender.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -707,6 +788,8 @@
     <Content Include="Views\Vendor\Index.cshtml" />
     <Content Include="Views\Vendor\Edit.cshtml" />
     <Content Include="Views\ServiceInvoice\Create.cshtml" />
+    <Content Include="Views\ServiceInvoice\_headpart.cshtml" />
+    <Content Include="Views\ServiceInvoice\_gridpart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -734,113 +817,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="Content\css\AdminLTE.css" />
-    <Content Include="Content\css\AdminLTE.min.css" />
-    <Content Include="Content\css\bootstrap-datepicker3.min.css" />
-    <Content Include="Content\css\bootstrap-select.css" />
-    <Content Include="Content\css\bootstrap-select.min.css" />
-    <Content Include="Content\css\bootstrap.min.css" />
-    <Content Include="Content\css\font-awesome.min.css" />
-    <Content Include="Content\css\icheck\aero.css" />
-    <Content Include="Content\css\icheck\aero.min.css" />
-    <Content Include="Content\css\icheck\blue.css" />
-    <Content Include="Content\css\icheck\blue.min.css" />
-    <Content Include="Content\css\icheck\green.css" />
-    <Content Include="Content\css\icheck\green.min.css" />
-    <Content Include="Content\css\icheck\grey.css" />
-    <Content Include="Content\css\icheck\grey.min.css" />
-    <Content Include="Content\css\icheck\minimal.css" />
-    <Content Include="Content\css\icheck\minimal.min.css" />
-    <Content Include="Content\css\icheck\orange.css" />
-    <Content Include="Content\css\icheck\orange.min.css" />
-    <Content Include="Content\css\icheck\pink.css" />
-    <Content Include="Content\css\icheck\pink.min.css" />
-    <Content Include="Content\css\icheck\purple.css" />
-    <Content Include="Content\css\icheck\purple.min.css" />
-    <Content Include="Content\css\icheck\red.css" />
-    <Content Include="Content\css\icheck\red.min.css" />
-    <Content Include="Content\css\icheck\yellow.css" />
-    <Content Include="Content\css\icheck\yellow.min.css" />
-    <Content Include="Content\css\skins\skin-black-light.css" />
-    <Content Include="Content\css\skins\skin-black-light.min.css" />
-    <Content Include="Content\css\skins\skin-black.css" />
-    <Content Include="Content\css\skins\skin-black.min.css" />
-    <Content Include="Content\css\skins\skin-blue-light.css" />
-    <Content Include="Content\css\skins\skin-blue-light.min.css" />
-    <Content Include="Content\css\skins\skin-blue.css" />
-    <Content Include="Content\css\skins\skin-blue.min.css" />
-    <Content Include="Content\css\skins\skin-green-light.css" />
-    <Content Include="Content\css\skins\skin-green-light.min.css" />
-    <Content Include="Content\css\skins\skin-green.css" />
-    <Content Include="Content\css\skins\skin-green.min.css" />
-    <Content Include="Content\css\skins\skin-purple-light.css" />
-    <Content Include="Content\css\skins\skin-purple-light.min.css" />
-    <Content Include="Content\css\skins\skin-purple.css" />
-    <Content Include="Content\css\skins\skin-purple.min.css" />
-    <Content Include="Content\css\skins\skin-red-light.css" />
-    <Content Include="Content\css\skins\skin-red-light.min.css" />
-    <Content Include="Content\css\skins\skin-red.css" />
-    <Content Include="Content\css\skins\skin-red.min.css" />
-    <Content Include="Content\css\skins\skin-yellow-light.css" />
-    <Content Include="Content\css\skins\skin-yellow-light.min.css" />
-    <Content Include="Content\css\skins\skin-yellow.css" />
-    <Content Include="Content\css\skins\skin-yellow.min.css" />
-    <Content Include="Content\css\skins\_all-skins.css" />
-    <Content Include="Content\css\skins\_all-skins.min.css" />
-    <Content Include="Content\fonts\fontawesome-webfont.eot" />
-    <Content Include="Content\fonts\fontawesome-webfont.svg" />
-    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
-    <Content Include="Content\fonts\fontawesome-webfont.woff" />
-    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
-    <Content Include="Content\fonts\FontAwesome.otf" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="Content\img\user.jpg" />
-    <Content Include="Content\img\icheck\aero.png" />
-    <Content Include="Content\img\icheck\aero@2x.png" />
-    <Content Include="Content\img\icheck\blue.png" />
-    <Content Include="Content\img\icheck\blue@2x.png" />
-    <Content Include="Content\img\icheck\green.png" />
-    <Content Include="Content\img\icheck\green@2x.png" />
-    <Content Include="Content\img\icheck\grey.png" />
-    <Content Include="Content\img\icheck\grey@2x.png" />
-    <Content Include="Content\img\icheck\minimal.png" />
-    <Content Include="Content\img\icheck\minimal@2x.png" />
-    <Content Include="Content\img\icheck\orange.png" />
-    <Content Include="Content\img\icheck\orange@2x.png" />
-    <Content Include="Content\img\icheck\pink.png" />
-    <Content Include="Content\img\icheck\pink@2x.png" />
-    <Content Include="Content\img\icheck\purple.png" />
-    <Content Include="Content\img\icheck\purple@2x.png" />
-    <Content Include="Content\img\icheck\red.png" />
-    <Content Include="Content\img\icheck\red@2x.png" />
-    <Content Include="Content\img\icheck\yellow.png" />
-    <Content Include="Content\img\icheck\yellow@2x.png" />
-    <Content Include="Content\js\adminlte.js" />
-    <Content Include="Content\js\init.js" />
-    <Content Include="Content\js\plugins\bootstrap\bootstrap.js" />
-    <Content Include="Content\js\plugins\bootstrap\bootstrap.min.js" />
-    <Content Include="Content\js\plugins\bootstrap-select\bootstrap-select.js" />
-    <Content Include="Content\js\plugins\bootstrap-select\bootstrap-select.min.js" />
-    <Content Include="Content\js\plugins\datepicker\bootstrap-datepicker.js" />
-    <Content Include="Content\js\plugins\datepicker\bootstrap-datepicker.min.js" />
-    <Content Include="Content\js\plugins\fastclick\fastclick.js" />
-    <Content Include="Content\js\plugins\fastclick\fastclick.min.js" />
-    <Content Include="Content\js\plugins\icheck\icheck.js" />
-    <Content Include="Content\js\plugins\icheck\icheck.min.js" />
-    <Content Include="Content\js\plugins\inputmask\jquery.inputmask.bundle.js" />
-    <Content Include="Content\js\plugins\inputmask\jquery.inputmask.bundle.min.js" />
-    <Content Include="Content\js\plugins\jquery\jquery-2.2.4.js" />
-    <Content Include="Content\js\plugins\jquery\jquery-2.2.4.min.js" />
-    <Content Include="Content\js\plugins\moment\moment.js" />
-    <Content Include="Content\js\plugins\moment\moment.min.js" />
-    <Content Include="Content\js\plugins\slimscroll\jquery.slimscroll.js" />
-    <Content Include="Content\js\plugins\slimscroll\jquery.slimscroll.min.js" />
-    <Content Include="Content\js\plugins\validator\validator.js" />
-    <Content Include="Content\js\plugins\validator\validator.min.js" />
     <Content Include="Views\web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Error\InternalServerError.cshtml" />

@@ -1,0 +1,35 @@
+@model ems.domain.GST
+<div class="form-group row">
+    @Html.LabelFor(m => m.gstName, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.TextBoxFor(model => model.gstName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.gstName)
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(m => m.gstRate, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.EJ().PercentTextBoxFor(model => model.gstRate).DecimalPlaces(2)
+        @Html.ValidationMessageFor(model => model.gstRate)
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(m => m.gstSgstRate, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.EJ().PercentTextBoxFor(model => model.gstSgstRate).DecimalPlaces(2)
+        @Html.ValidationMessageFor(model => model.gstSgstRate)
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(m => m.gstCgstRate, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.EJ().PercentTextBoxFor(model => model.gstCgstRate).DecimalPlaces(2)
+        @Html.ValidationMessageFor(model => model.gstCgstRate)
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(m => m.gstSpRemarks, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.TextAreaFor(model => model.gstSpRemarks, new { @class = "form-control", @rows = "3" })
+    </div>
+</div>

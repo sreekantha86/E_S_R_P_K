@@ -10,8 +10,9 @@ namespace ems.domain
     {
         public int SerInvRowId { get; set; }
         public int slNo { get; set; }
-        public int SerInvId { get; set; }
-        public int SerId { get; set; }
+        public string SAC { get; set; }
+        public int? SerInvId { get; set; }
+        public int? SerId { get; set; }
         public string RowRemarks { get; set; }
         public decimal Amount { get; set; }
         public decimal GSTPer { get; set; }

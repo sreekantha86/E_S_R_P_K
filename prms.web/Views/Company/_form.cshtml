@@ -1,0 +1,86 @@
+﻿@model ems.domain.Company
+<div class="form-group row">
+    @Html.HiddenFor(m => m.ComanyId)
+    @Html.LabelFor(m => m.CompanyName, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.TextBoxFor(model => model.CompanyName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.CompanyName)
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(m => m.CompanyWebsite, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.TextBoxFor(model => model.CompanyWebsite, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.CompanyWebsite)
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(m => m.ContactNumbers, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.TextBoxFor(model => model.ContactNumbers, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.ContactNumbers)
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(m => m.CompanyMailId, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.TextBoxFor(model => model.CompanyMailId, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.CompanyMailId)
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(m => m.CompanyAddress1, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.TextBoxFor(model => model.CompanyAddress1, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.CompanyAddress1)
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(m => m.CompanyAddress2, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.TextBoxFor(model => model.CompanyAddress2, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.CompanyAddress2)
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(m => m.CompanyAddress3, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.TextBoxFor(model => model.CompanyAddress3, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.CompanyAddress3)
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(m => m.TIN, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.TextBoxFor(model => model.TIN, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.TIN)
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(m => m.PAN, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.TextBoxFor(model => model.PAN, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.PAN)
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(m => m.IECode, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.TextBoxFor(model => model.IECode, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.IECode)
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(m => m.GSTRegistered, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.CheckBoxFor(model => model.GSTRegistered, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.GSTRegistered)
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(m => m.GSTNo, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.TextBoxFor(model => model.GSTNo, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.GSTNo)
+    </div>
+</div>

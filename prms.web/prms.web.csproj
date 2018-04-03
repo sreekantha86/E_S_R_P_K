@@ -494,6 +494,8 @@
     <Content Include="Views\GST\Create.cshtml" />
     <Content Include="Views\GST\Edit.cshtml" />
     <Content Include="Views\GST\Index.cshtml" />
+    <Content Include="Views\Company\_form.cshtml" />
+    <Content Include="Views\Company\Edit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -507,6 +509,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\CompanyController.cs" />
     <Compile Include="Controllers\GSTController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Helpers\AuthorizeUser.cs" />

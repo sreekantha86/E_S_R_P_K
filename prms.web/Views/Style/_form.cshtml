@@ -1,0 +1,35 @@
+@model ems.domain.Style
+<div class="form-group row">
+    @Html.LabelFor(m => m.StyleNo, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.TextBoxFor(model => model.StyleNo, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.StyleNo)
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(m => m.StylePrice, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.EJ().PercentTextBoxFor(model => model.StylePrice).DecimalPlaces(2)
+        @Html.ValidationMessageFor(model => model.StylePrice)
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(m => m.Quantity, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.EJ().PercentTextBoxFor(model => model.Quantity).DecimalPlaces(2)
+        @Html.ValidationMessageFor(model => model.Quantity)
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(m => m.DeliveryDate, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.EJ().DatePickerFor(model => model.DeliveryDate).DateFormat("dd-MMM-yyyy")
+        @Html.ValidationMessageFor(model => model.DeliveryDate)
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(m => m.Colours, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.TextAreaFor(model => model.Colours, new { @class = "form-control", @rows = "3" })
+    </div>
+</div>

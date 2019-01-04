@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@(Html.EJ().Grid<ems.domain.ViewModels.ProductMainGroupViewModel > ("Grid")
+                 .Datasource((IEnumerable<ems.domain.ViewModels.ProductMainGroupViewModel>)ViewBag.datasource)
+                 .ToolbarSettings(toolBar => toolBar.ShowToolbar().ToolbarItems(items =>
+                 {
+                     items.AddTool(ToolBarItems.ExcelExport);
+                     items.AddTool(ToolBarItems.WordExport);
+                     items.AddTool(ToolBarItems.PdfExport);
+                 }))
+                 .AllowPaging()
+                 .IsResponsive(true)
+                .EnableResponsiveRow(true)
+                .AllowFiltering()
+                 .Columns(col =>
+                 {
+                     col.Field("prdMGId").Visible(true).HeaderText("prdMGId").IsIdentity(true).IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
+                     col.Field(p => p.prdMGHSN).HeaderText("HSN/SAC").TextAlign(TextAlign.Left).Width("20%").Add();
+                     col.Field(p => p.prdMGName).HeaderText("Product Group").TextAlign(TextAlign.Left).Width("50%").Add();
+                     col.Field(p => p.prdTypeName).HeaderText("Product Type").TextAlign(TextAlign.Left).Width("30%").Add();
+                 })
+                 .ClientSideEvents(events => events.RecordDoubleClick("DoubleClicked"))
+                 .Mappers(map => map.ExportToExcelAction("Base/ExportToExcel").ExportToWordAction("Base/ExportToWord").ExportToPdfAction("Base/ExportToPdf"))
+)
+
+<script>
+    function DoubleClicked(args)
+    {
+        var id = args.data["prdMGId"];
+        var url = '@Url.Action("Edit", "ProductMainGroup")';
+        location.href = url + "/" + id;
+    }
+</script>

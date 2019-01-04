@@ -27,12 +27,15 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="@Url.Action("Create","Customer")"><i class="fa fa-dollar"></i> <span>Customer</span></a></li>
-                    <li><a href="@Url.Action("Create","Vendor")"><i class="fa fa-user-secret"></i> <span>Vendor</span></a></li>
-                    <li><a href="@Url.Action("Create","GST")"><i class="fa fa-ship"></i> <span>GST Rates</span></a></li>
-                    <li><a href="@Url.Action("Create","Warehouse")"><i class="fa fa-ship"></i> <span>Warehouse</span></a></li>                    
-                    <li><a href="#"><i class="fa fa-ship"></i> <span>Fiscal Year</span></a></li>
-                    <li><a href="@Url.Action("Edit","Company")"><i class="fa fa-ship"></i> <span>Company Details</span></a></li>                    
+                    <li class="@Url.IsLinkActive("Create","Customer")"><a href="@Url.Action("Create","Customer")"><i class="fa fa-dollar"></i> <span>Customer</span></a></li>
+                    <li class="@Url.IsLinkActive("Create","Vendor")"><a href="@Url.Action("Create","Vendor")"><i class="fa fa-user-secret"></i> <span>Vendor</span></a></li>
+                    <li class="@Url.IsLinkActive("Create","GST")"><a href="@Url.Action("Create","GST")"><i class="fa fa-ship"></i> <span>GST Rates</span></a></li>
+                    <li class="@Url.IsLinkActive("Create","Warehouse")"><a href="@Url.Action("Create","Warehouse")"><i class="fa fa-ship"></i> <span>Warehouse</span></a></li>                    
+                    <li class=""><a href="#"><i class="fa fa-ship"></i> <span>Fiscal Year</span></a></li>
+                    <li class="@Url.IsLinkActive("Edit","Company")"><a href="@Url.Action("Edit","Company")"><i class="fa fa-ship"></i> <span>Company Details</span></a></li>                    
+                    <li class="@Url.IsLinkActive("Create","Style")"><a href="@Url.Action("Create","Style")"><i class="fa fa-ship"></i> <span>Style Description</span></a></li>
+                    <li class="@Url.IsLinkActive("Create","Fabric")"><a href="@Url.Action("Create","Fabric")"><i class="fa fa-ship"></i> <span>Fabric</span></a></li>
+                    <li class="@Url.IsLinkActive("Create","Trim")"><a href="@Url.Action("Create","Trim")"><i class="fa fa-ship"></i> <span>Trims</span></a></li>
                 </ul>
             </li>
             <li class="treeview">

@@ -1,0 +1,29 @@
+﻿@model ems.domain.ProductMainGroup
+<div class="form-group row">
+    @Html.LabelFor(m => m.prdMGHSN, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.TextBoxFor(model => model.prdMGHSN, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.prdMGHSN)
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(m => m.prdMGName, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.TextBoxFor(model => model.prdMGName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.prdMGName)
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(m => m.prdTypeId, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">
+        @Html.EJ().DropDownListFor(model => model.prdTypeId, (Syncfusion.JavaScript.Models.DropDownListProperties)ViewData["ProdTypeDropdownModel"])
+        @Html.ValidationMessageFor(model => model.prdTypeId)
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(m => m.prdMGRemarks, new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-5">        
+        @Html.TextAreaFor(model => model.prdMGRemarks, new { @class = "form-control", @rows = "3" })
+        @Html.ValidationMessageFor(model => model.prdTypeId)
+    </div>
+</div>

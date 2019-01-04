@@ -1,0 +1,32 @@
+﻿@model ems.domain.Style
+@{
+    ViewBag.Title = "Style Description";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script>
+    function GotoPreviosList()
+    {
+        location.href = '@Url.Action("Index","Fabric")';
+    }
+</script>
+<div class="box">
+    <div class="box-header">
+        <h3 class="box-title">Create Style Description</h3>
+    </div>
+    @using (Html.BeginForm(null, null, new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form" }))
+    {
+        @Html.AntiForgeryToken()
+        <!-- /.box-header -->
+        <div class="box-body">
+            <div class="box-body">
+                @Html.Partial("_form", Model)
+                <div class="box-footer">
+                    <button type="submit" class="btn btn-default">Cancel</button>
+                    <button type="button" class="btn btn-default" onclick="GotoPreviosList()">Previous</button>
+                    <button type="submit" class="btn btn-info pull-right">Save</button>
+                </div>
+            </div>
+        </div>
+        <!-- /.box-body -->
+    }
+</div>

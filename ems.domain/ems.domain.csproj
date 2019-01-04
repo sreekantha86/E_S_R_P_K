@@ -45,6 +45,7 @@
     <Compile Include="Country.cs" />
     <Compile Include="Currency.cs" />
     <Compile Include="Customer.cs" />
+    <Compile Include="Fabric.cs" />
     <Compile Include="GST.cs" />
     <Compile Include="LoginViewModel.cs" />
     <Compile Include="ProductMainGroup.cs" />
@@ -54,6 +55,8 @@
     <Compile Include="ServiceExpense.cs" />
     <Compile Include="ServiceIncomeDT.cs" />
     <Compile Include="ServiceIncomeHD.cs" />
+    <Compile Include="Style.cs" />
+    <Compile Include="Trim.cs" />
     <Compile Include="UOM.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Vendor.cs" />
